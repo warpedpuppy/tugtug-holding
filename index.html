@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tugtug</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <main>
+    <header>
+      <div class="wordmark">tugtug</div>
+      <p class="tagline">A small collection of things worth making.</p>
+    </header>
+
+    <nav class="cards">
+      <a class="card" href="https://warpedpuppy.com" target="_blank" rel="noopener">
+        <div class="card-inner">
+          <span class="card-index">01</span>
+          <h2 class="card-name">Warped Puppy</h2>
+          <span class="card-domain">warpedpuppy.com</span>
+          <div class="card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://tryingsomething.com" target="_blank" rel="noopener">
+        <div class="card-inner">
+          <span class="card-index">02</span>
+          <h2 class="card-name">Trying Something</h2>
+          <span class="card-domain">tryingsomething.com</span>
+          <div class="card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://utilspalooza.com" target="_blank" rel="noopener">
+        <div class="card-inner">
+          <span class="card-index">03</span>
+          <h2 class="card-name">Utilspalooza</h2>
+          <span class="card-domain">utilspalooza.com</span>
+          <div class="card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </div>
+        </div>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <span>&copy; <span id="year"></span> tugtug</span>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
